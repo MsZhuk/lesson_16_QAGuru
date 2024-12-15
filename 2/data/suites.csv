@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2501","Проверка перехода на страницу производителя","chromium","Sun Dec 15 02:03:26 GMT 2024","passed","Sun Dec 15 02:03:28 GMT 2024","Проверка сервиса Academybugs","academybugs.spec.js","",""
+"","1197","Проверка пагинации","chromium","Sun Dec 15 02:03:24 GMT 2024","passed","Sun Dec 15 02:03:26 GMT 2024","Проверка сервиса Academybugs","academybugs.spec.js","",""
+"","1962","Оставить отзыв","chromium","Sun Dec 15 02:03:22 GMT 2024","passed","Sun Dec 15 02:03:24 GMT 2024","Проверка сервиса Academybugs","academybugs.spec.js","",""
+"","7444","Проверка кнопки Return the store","chromium","Sun Dec 15 02:03:28 GMT 2024","passed","Sun Dec 15 02:03:36 GMT 2024","Проверка сервиса Academybugs","academybugs.spec.js","",""
+"","2314","Смена валюты","chromium","Sun Dec 15 02:03:20 GMT 2024","passed","Sun Dec 15 02:03:22 GMT 2024","Проверка сервиса Academybugs","academybugs.spec.js","",""
