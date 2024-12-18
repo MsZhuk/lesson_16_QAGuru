@@ -59,14 +59,21 @@ jobs:
           publish_dir: allure-history
           publish_branch: gh-pages
       - name: telegram Notification
+        if: success()
         uses: cbrgm/telegram-github-action@v1
         with:
          to: ${{ secrets.TELEGRAM_CHAT_ID }}
          token: ${{ secrets.TELEGRAM_TOKEN }}
-         jobStatus: ${{ job.status }}
          message: |
             🚀 Success!
-            Actor: ${{ github.actor }}
-            Repository: ${{ github.repository }}
-            Check it out: ${{ github.event.release.html_url }}
+      - name:  telegram Notification2
+        if: failure()
+        uses: cbrgm/telegram-github-action@v1
+        with:
+         to: ${{ secrets.TELEGRAM_CHAT_ID }}
+         token: ${{ secrets.TELEGRAM_TOKEN }}
+         message: |
+            🚀 UNSuccess!
+     
+        
 
