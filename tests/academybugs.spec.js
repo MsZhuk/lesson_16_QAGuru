@@ -13,7 +13,7 @@ test.describe('Проверка сервиса Academybugs', () => {
        const messagePage = new MessagePage(page);
 
        await mainPage.open(url);
-       await mainPage.clickItem2();
+       await mainPage.clickItem();
        await productPage.changeCurrency();
        await allure.step("Открытие окна с подробной информацией об ошибке", async () => {
          await expect(await messagePage.message).toContainText(texterror);
