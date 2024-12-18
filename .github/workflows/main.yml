@@ -61,11 +61,10 @@ jobs:
       - name: telegram Notification
         uses: cbrgm/telegram-github-action@v1
         with:
-         status: ${{ steps.5.outcome }}
          to: ${{ secrets.TELEGRAM_CHAT_ID }}
          token: ${{ secrets.TELEGRAM_TOKEN }}
          message: |
-            🚀 Success!
+            🚀 Success!(https://github.com/MsZhuk/lesson_16_QAGuru/actions/workflows/main.yml)
             Actor: ${{ github.actor }}
             Repository: ${{ github.repository }}
             Check it out: ${{ github.event.release.html_url }}
