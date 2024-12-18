@@ -63,8 +63,9 @@ jobs:
         with:
          to: ${{ secrets.TELEGRAM_CHAT_ID }}
          token: ${{ secrets.TELEGRAM_TOKEN }}
+         jobStatus: ${{ job.status }}
          message: |
-            🚀 Success!(https://github.com/MsZhuk/lesson_16_QAGuru/actions/workflows/main.yml)
+            🚀 Success!
             Actor: ${{ github.actor }}
             Repository: ${{ github.repository }}
             Check it out: ${{ github.event.release.html_url }}
